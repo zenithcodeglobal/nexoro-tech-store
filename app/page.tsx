@@ -341,8 +341,9 @@ export default function Home() {
 
   return (
     <div
-      className={`min-h-screen transition-colors duration-300`}
-      style={{
+    className="min-h-screen transition-colors duration-300"
+    style={
+      {
         "--bg-primary": isDarkMode ? "#121212" : "#ffffff",
         "--bg-secondary": isDarkMode ? "#1e1e1e" : "#f8f5ff",
         "--text-primary": isDarkMode ? "#ffffff" : "#1a1a1a",
@@ -355,8 +356,9 @@ export default function Home() {
         backgroundColor: "var(--bg-primary)",
         color: "var(--text-primary)",
         fontFamily: "'Outfit', sans-serif",
-      }}
-    >
+      } as React.CSSProperties
+    }
+  >
       <nav
         className="px-4 md:px-8 lg:px-16 py-4 flex items-center justify-between transition-colors duration-300 sticky top-0 z-50"
         style={{ backgroundColor: "var(--bg-primary)" }}
